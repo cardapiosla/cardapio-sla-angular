@@ -1,4 +1,4 @@
-export class Response<T> {
+export interface Response<T> {
     hasException: boolean | undefined;
     exceptionMessage: string | undefined;
     content: T | undefined;

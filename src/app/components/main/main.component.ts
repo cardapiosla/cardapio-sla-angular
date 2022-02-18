@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Menu } from 'src/app/models/menu';
 
 @Component({
   selector: 'app-main',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+
+  @Input('menu') menu: Menu | undefined;
 
   constructor() { }
 
