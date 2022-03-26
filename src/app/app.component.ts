@@ -10,13 +10,15 @@ import { MenuService } from './services/menu.service';
 export class AppComponent implements OnInit {
 
   menu?: Menu; 
+  header: any;
+  footer: any;
 
   constructor(private menuService: MenuService) {
   }
 
   ngOnInit(): void {
-    this.menuService.getMenu().subscribe(menu => {
-      this.menu = menu;
+    this.menuService.getMenu().subscribe(res => {
+      this.menu = res.content;
     });
   }
 

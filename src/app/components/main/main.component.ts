@@ -8,11 +8,12 @@ import { Menu } from 'src/app/models/menu';
 })
 export class MainComponent implements OnInit {
 
-  @Input('menu') menu: Menu | undefined;
+  @Input() menu: Menu | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('on init');
   }
 
 }
