@@ -7,3 +7,6 @@
 - [ ] Add a favstar to each option
 - [ ] Create the english version only of the content
 - [ ] Add a flag in the header
+- [ ] Add the assests folder containing the images from the site
+- [ ] Create an individual component for each item
+- [ ] Create an individual component for each section
