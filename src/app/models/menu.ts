@@ -1,5 +1,7 @@
+import { Item } from "./item";
+
 export interface Menu {
-    entrance: string[];
+    entrance?: string[];
     plate1: string[];
     plate2: string[];
     dessert1: string[];

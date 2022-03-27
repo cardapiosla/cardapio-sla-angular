@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Menu } from 'src/app/models/menu';
+import { SECTION_DATA } from 'src/app/data/sections';
+import { ResponseV1 } from 'src/app/models/responsev1';
+import { Section } from 'src/app/models/section';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +10,10 @@ import { Menu } from 'src/app/models/menu';
 })
 export class MainComponent implements OnInit {
 
-  @Input() menu: Menu | undefined;
+  @Input()
+  response!: ResponseV1;
+
+  sections: Section[] = SECTION_DATA;
 
   constructor() { }
 
