@@ -3,7 +3,14 @@
     <!-- {{ menu | json }} -->
 
     <div class="head">
-        <div>Date Picker</div>
+        <mat-form-field>
+            <mat-select>
+                <mat-option>Teste</mat-option>
+                <mat-option>Teste</mat-option>
+                <mat-option>Teste</mat-option>
+                <mat-option>Teste</mat-option>
+            </mat-select>
+        </mat-form-field>
     </div>
 
 
@@ -15,76 +22,74 @@
 
         <div class="section">
             <div class="title">Entrada</div>
-            <ng-container *ngFor="let m of response.menu?.entrance">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.entrance">
+                <div class="menu-item"> - {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Prato I</div>
-            <ng-container *ngFor="let m of response.menu?.plate1">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.plate1">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Prato II</div>
-            <ng-container *ngFor="let m of response.menu?.plate2">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.plate2">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Vegetariano</div>
-            <ng-container *ngFor="let m of response.menu?.vegetarian">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.vegetarian">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Opção</div>
-            <ng-container *ngFor="let m of response.menu?.option">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.option">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Sobremesa I</div>
-            <ng-container *ngFor="let m of response.menu?.dessert1">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.dessert1">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Grill</div>
-            <ng-container *ngFor="let m of response.menu?.grill">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.grill">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Gourmet</div>
-            <ng-container *ngFor="let m of response.menu?.gourmet">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.gourmet">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Sobremesa II</div>
-            <ng-container *ngFor="let m of response.menu?.dessert2">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.dessert2">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
         <div class="section">
             <div class="title">Sobremesa III</div>
-            <ng-container *ngFor="let m of response.menu?.dessert3">
-                <div> {{m}}  </div>
+            <ng-container *ngFor="let m of response?.menu?.dessert3">
+                <div class="menu-item"> {{m}}  </div>
             </ng-container>
         </div>
 
-
     </div>
-
 
 </div>

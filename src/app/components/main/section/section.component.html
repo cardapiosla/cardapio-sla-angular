@@ -1,0 +1,10 @@
+<div class="section-container">
+
+    <div class="section--title">{{ section?.title }} </div>
+    <div *ngFor="let i of section?.items">
+        <div class="section--item">
+            <div class="section--item-title">{{ i?.name }}</div>
+        </div>
+    </div>
+
+</div>

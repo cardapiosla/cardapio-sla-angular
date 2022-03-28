@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  background: #fafafa;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+// TODO - Place the scania themes here
+$scania-primary-color: #051e40;
+$scania-white : #fafafa;
+$scania-red: #d50a23;
+$scania-yellow: #ffd700;
+$scnia-green: #00ff00;
