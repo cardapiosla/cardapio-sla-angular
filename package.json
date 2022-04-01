@@ -1,11 +1,6 @@
 {
   "name": "cardapio-sla-angular",
-  "version": "0.0.0",
-  "husky": {
-    "hooks": {
-      "pre-commit": "ng lint"
-    }
-  },
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint --fix",
     "prepare": "husky install",
-    "lint:no-watch": "ng lint --fix --watch=false"
+    "lint:no-watch": "ng lint --fix --watch=false",
+    "linter": "lint-staged"
   },
   "private": false,
   "dependencies": {
@@ -55,5 +51,11 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "lint-staged": "^12.3.7",
     "typescript": "~4.5.2"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,css}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

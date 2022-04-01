@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   menu2: Menu | undefined;
   header: any;
   footer: any;
-  selectedDate: string | undefined;
+  selectedDate: string | undefined
   selectedLanguage: string | undefined = 'pt';
   
   constructor(private menuService: MenuService) {
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.menuService.getMenuV1().subscribe((res: ResponseV1[]) => {
-      this.menu = res[0];
+      this.menu = res[0]
       // TODO get the data from the response inside the menu
     });
   }
