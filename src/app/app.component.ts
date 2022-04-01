@@ -12,6 +12,7 @@ import { ResponseV1 } from './models/responsev1';
 export class AppComponent implements OnInit {
 
   // menu?: Menu; 
+  title: string = 'cardapio-sla-angular';
   menu!: ResponseV1;
   menu2: Menu | undefined;
   header: any;

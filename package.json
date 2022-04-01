@@ -1,15 +1,22 @@
 {
   "name": "cardapio-sla-angular",
   "version": "0.0.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepare": "husky install",
+    "lint:no-watch": "ng lint --fix --watch=false"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/cdk": "^13.3.1",
@@ -46,6 +53,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lint-staged": "^12.3.7",
     "typescript": "~4.5.2"
   }
 }
