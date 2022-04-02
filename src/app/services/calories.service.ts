@@ -10,11 +10,11 @@ export class CaloriesService {
   // Request URL: https://www.myfitnesspal.com/public/nutrition?q=arroz&page=1&per_page=10
   // https://caloriasporalimentoapi.herokuapp.com/api/calorias/?descricao=alface
 
-  apiUrl: string = 'https://myfitnesspal.com/public/nutrition?q={0}';
+  apiUrl = 'https://myfitnesspal.com/public/nutrition?q={0}';
 
   constructor(private http: HttpClient) { }
 
-  getCalories(food: string): Observable<any> {
+  getCalories(food: string): Observable<unknown> {
     return this.http.get<Response>(this.apiUrl.replace('{0}', food));
   }
 

@@ -10,12 +10,9 @@ import { Section } from 'src/app/models/section';
 })
 export class MainComponent implements OnInit {
 
-  @Input()
-  response!: ResponseV1;
+  @Input() response!: ResponseV1;
 
   sections: Section[] = SECTION_DATA;
-
-  constructor() { }
 
   ngOnInit(): void {
     console.log('on init');

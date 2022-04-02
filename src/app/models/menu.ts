@@ -1,5 +1,3 @@
-import { Item } from "./item";
-
 export interface Menu {
     entrance?: string[];
     plate1: string[];

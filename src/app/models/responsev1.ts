@@ -1,4 +1,4 @@
-import { Menu } from "./menu";
+import { Menu } from './menu';
 
 export interface ResponseV1 {
     _id?: number;
