@@ -10,7 +10,7 @@ echo -e "${BLUE}Running pre-commit hook...${NC}"
 npm run linter
 
 echo ""
-echo -e "\e[32m Linting completed \e[0m"
+echo -e "\e[32mLinting completed \e[0m"
 echo ""
 
 

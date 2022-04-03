@@ -5,5 +5,5 @@ echo ""
 echo -e "\e[34mRunning pre-push hook...\e[0m"
 echo ""
 
-echo -e "\e[32m Pre Push Completed \e[0m"
+echo -e "\e[32mpre-push Completed \e[0m"
 echo ""
