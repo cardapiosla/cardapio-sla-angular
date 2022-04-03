@@ -1,10 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "Running pre-commit hook..." >&2
+
 npm run linter
 
 echo ""
-echo -e "\e[32m Liniting complete \e[0m"
+echo -e "\e[32m Linting completed \e[0m"
 echo ""
 
 
