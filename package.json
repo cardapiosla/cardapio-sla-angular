@@ -54,7 +54,7 @@
     "typescript": "~4.5.2"
   },
   "lint-staged": {
-    "src/**/*.{ts,html,css}": [
+    "src/**/*.{ts,css}": [
       "eslint --fix",
       "git add"
     ]
