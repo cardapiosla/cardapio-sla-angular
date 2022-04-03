@@ -4,6 +4,8 @@
 BLUE=\\e[34m
 NC=\\e[0m
 
+echo $0 1, $1 2, $3 3
+
 echo ""
 echo -e "${BLUE}Running pre-commit hook...${NC}"
 
