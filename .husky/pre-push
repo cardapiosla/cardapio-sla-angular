@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo ""
+echo -e "\e[34mRunning pre-push hook...\e[0m"
