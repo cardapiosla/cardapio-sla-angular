@@ -1,11 +1,10 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+BLUE=test
+
 echo ""
 echo -e "${BLUE}Running pre-commit hook...${NC}"
-
-
-echo "Running pre-commit hook..." >&2
 
 npm run linter
 
