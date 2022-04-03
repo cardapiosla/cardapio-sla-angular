@@ -49,13 +49,20 @@
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "~1.7.1",
+    "karma-jasmine-html-reporter": "~1.7.0",
     "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
     "typescript": "~4.5.2"
   },
   "lint-staged": {
-    "src/**/*.{ts,css}": [
+    "src/**/*.ts": [
       "eslint --fix"
+    ],
+    "src/**/*.{json,md,mdx}": [
+      "prettier --write"
+    ],
+    "src/**/*.{html,css,less,scss,sass}": [
+      "prettier --write"
     ]
   }
 }

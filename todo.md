@@ -15,4 +15,3 @@
 - [ ] Create the background tasks and service workers
 - [ ] Get the string of the meal, check if exists on the firebase database, if not, create a new meal
 - [ ] Update the information about what was the last time the meal appeared
-
