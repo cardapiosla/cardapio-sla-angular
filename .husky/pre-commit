@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-BLUE=test
+BLUE=\e[34m
 
 echo ""
 echo -e "${BLUE}Running pre-commit hook...${NC}"
