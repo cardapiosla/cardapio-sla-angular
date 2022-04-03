@@ -3,4 +3,8 @@
 
 npm run linter
 
-echo "Linting complete \n"
+echo ""
+echo -e "\e[32m Liniting complete \e[0m"
+echo ""
+
+
