@@ -2,6 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 BLUE=\\e[34m
+GREEN=\\e[32m
 NC=\\e[0m
 
 echo ""
@@ -10,7 +11,7 @@ echo -e "${BLUE}Running pre-commit hook...${NC}"
 npm run linter
 
 echo ""
-echo -e "\e[32mLinting completed \e[0m"
+echo -e "${GREEN}inting completed ${NC}"
 echo ""
 
 
